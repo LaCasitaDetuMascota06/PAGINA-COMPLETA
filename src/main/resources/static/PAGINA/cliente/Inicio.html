@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PAGINA/cliente/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/PAGINA/cliente/css/styleCliente.css">
+    <link rel="stylesheet" href="/PAGINA/cliente/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.bootstrap5.css">
+    <title>Inicio | La casita de tu mascota</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">La casita de tu mascota</a>
+            
+            <!-- Botón de menú colapsable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Opciones del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Botones de acción a la derecha -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Ver perfil -->
+                    <li class="nav-item me-3">
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal">
+                            Ver perfil
+                        </button>
+                    </li>
+                    <!-- Catálogo -->
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-white" href="/PAGINA/cliente/index.html">Productos</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-white" href="/PAGINA/cliente/devolucion.html">Devoluciones</a>
+                    </li>
+                    <!-- Íconos adicionales -->
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+						<a href="/logout">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Modal de perfil -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <img src="/PAGINA/cliente/img/cliente.jpg" class="card-img-top img-fluid" alt="Imagen del cliente">
+                        <div class="card-body">
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col contenedorMImagen">
+        <h1 class="fs-1">La casita de tu mascota</h1>
+        <h3 class="fs-2">
+            <br>
+            Estamos ubicados en Bogotá D.C
+        </h3>
+    </div>
+
+
+    <div class="container tarjetas">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">alimento para mascotas</h5>
+                        <img src="/PAGINA/cliente/img/2.jpg" class="rounded" alt="">
+                        <p class="card-text">Le brindamos a los clientes una variedad de comida de alta calidad para sus
+                            mascotas.</p>
+                        <a href="/PAGINA/cliente/Catalogo.html" class="btn btn-dark">Ver más...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Utencilios para mascotas</h5>
+                        <img src="/PAGINA/cliente/img/utencilios.jpg" class="rounded" alt="">
+                        <p class="card-text">Tenemos una alta variedad de utencilios para mascotas, como por ejemplo:
+                            Ropa, Camas, Juguetes, utencilios para el cuidado de mascotas, etc.
+                            <br><br><br>
+                        </p>
+                        <a href="/PAGINA/cliente/Catalogo.html" class="btn btn-dark">Ver más...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">baño y limpieza para mascotas</h5>
+                        <img src="/PAGINA/cliente/img/baño.jpg" class="rounded" alt="">
+                        <p class="card-text">Tenemos personas expertas para el baño y cuidado de las mascotas, brindamos baño y limpieza para la gran mayoria de mascotas.
+                        </p>
+                        <a href="/PAGINA/cliente/Catalogo.html" class="btn btn-dark">Ver más...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--inicio carrusel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide vallase">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/PAGINA/cliente/img/loro.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Servicios a medida</h5>
+                    <p>Nuestro servicio buscar ser integral, por eso nos cercioramos de
+                        ofrecer siempre la opción más acorde a tus necesidades y la de tus mascotas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/PAGINA/cliente/img/ComidaPerro.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Las mejores comidas</h5>
+                    <p>
+                        Buscamos siempre tener la mayor cantidad de comidad de distinto tipo para tu mascota.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/PAGINA/cliente/img/ComidaAves.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>
+                        Comida para aves
+                    </h5>
+                    <p>
+                        Tenemos una variedad excelente para los usuarios con aves como mascotas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Fin carrusel-->
+
+
+    <div class="flecha">
+        <a href="/PAGINA/cliente/Inicio.html">
+            <img src="/PAGINA/cliente/img/flecha.png" alt="">
+        </a>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer>
+                    <p>
+                        © 2024 La casita de tu mascota. Todos los derechos reservados.
+                        <a href="#">
+                            <strong class="text-primary"></strong>
+                        </a>
+                    </p>
+
+                </div>
+                <div class="text-center ">
+
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item ">
+                            <a href="https://www.facebook.com/profile.php?id=100043078127035" class="text-dark"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#" class="text-dark"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="https://www.instagram.com/davidxgood/" class="text-dark"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="/PAGINA/cliente/js/bootstrap.bundle.min.js"></script>
+    <script src="/PAGINA/cliente/js/carrusel.js"></script>
+
+</body>
+
+</html>

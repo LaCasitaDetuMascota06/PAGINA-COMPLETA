@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="/PAGINA/admin/css/comentarios.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+	<title>Administrador</title>
+</head>
+<body>
+
+
+
+	<!-- SIDEBAR -->
+		<section id="sidebar">
+			<a href="#" class="brand">
+				<i class='bx bxs-smile'></i>
+				<span class="text">Administrador</span>
+			</a>
+			<ul class="side-menu top">
+				<li>
+					<a href="/PAGINA/admin/inicio.html">
+						<i class='bx bxs-dashboard' ></i>
+						<span class="text">Inicio</span>
+					</a>
+				</li>
+				<li>
+					<a href="/PAGINA/admin/Vista.html">
+					<i class='bx bx-bar-chart-alt'></i>
+						<span class="text">Vista general</span>
+					</a>
+				</li>
+				<li>
+					<a href="/PAGINA/admin/productos.html">
+					<i class='bx bxs-edit-alt'></i>
+						<span class="text">Productos</span>
+					</a>
+				</li>
+				<li>
+					<a href="/PAGINA/admin/reporte.html">
+					<i class='bx bxs-report' ></i>
+						<span class="text">Reporte</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="/PAGINA/admin/comentarios.html">
+					<i class='bx bxs-message-dots'></i>
+						<span class="text">Comentarios</span>
+					</a>
+				</li>
+				<li>
+					<a href="/PAGINA/admin/ajustes.html">
+						<i class='bx bxs-cog' ></i>
+						<span class="text">Ajustes</span>
+					</a>
+				</li>
+				
+				<li>
+								<a href="/logout">
+										<i class='bx bxs-log-out-circle' ></i>
+									<span class="text">Cerrar sesion</span>
+								</a>
+							</li>
+			</ul>
+		</section>
+		<!-- SIDEBAR -->
+
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categorias</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a class="nav-link"href="/envio-correo">
+										<i class='bx bxs-envelope'></i>
+									</a>
+			<a href="#" class="profile">
+				<img src="/PAGINA/admin/img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+		 <!-- Swiper -->
+		 <div class="container">
+		 <h1 class="titulo">Lo que opinan tus peluqueros!!</h1>
+
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+                <img src="/PAGINA/admin/img/image1.jpg" alt="" srcset="">
+				<div class="review">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                <h3>Satya Nadella</h3>
+                <h4>CEO, Microsoft</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+                <img src="/PAGINA/admin/img/image2.jpg" alt="" srcset="">
+				<div class="review">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star-half"></i></i>
+				</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                <h3>Safra Catz</h3>
+                <h4>CEO, Oracle </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+                <img src="/PAGINA/admin/img/image3.jpg" alt="" srcset="">
+				<div class="review">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                <h3>Mark Zuckerberg</h3>
+                <h4>CEO, Facebook</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<hr class="custom-line">
+ <!-- Swiper -->
+ <div class="container">
+ <h1 class="titulo">Lo que opinan tus peluqueros!!</h1>
+     <div class="swiper mySwiper">
+		
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+                <img src="/PAGINA/admin/img/image1.jpg" alt="" srcset="">
+				<div class="review">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                <h3>Satya Nadella</h3>
+                <h4>CEO, Microsoft</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+                <img src="/PAGINA/admin/img/image2.jpg" alt="" srcset="">
+				<div class="review">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star-half"></i></i>
+				</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                <h3>Safra Catz</h3>
+                <h4>CEO, Oracle </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+                <img src="/PAGINA/admin/img/image3.jpg" alt="" srcset="">
+				<div class="review">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                <h3>Mark Zuckerberg</h3>
+                <h4>CEO, Facebook</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    var slider = new  Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        breakpoints: {  
+        '480': {
+        slidesPerView: 2,
+        spaceBetween: 40,},
+        '640': {
+        slidesPerView: 3,
+        spaceBetween: 50, },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2000,
+        }
+    })
+</script>	
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="/PAGINA/admin/js/script.js"></script>
+</body>
+<style>
+   .container{
+   max-width:1200px;
+   width:100%;
+   position:relative;
+   margin:0 auto;
+   }
+    .mySwiper{
+    max-width: 11000px;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    }
+    .card{
+    text-align: center;
+    background-color: #ffffff;
+    padding:20px 30px;
+    border-radius: 10px;
+	box-shadow:rgb(149 157 165 / 20%) 0px 8px 24px;
+    }
+	.swiper-slide { 
+	display: flex;
+	align-items: center;
+	margin-top:  30px; /* ajusta el valor según lo necesites */
+}
+
+    .card img{
+    width: 130px;
+    border-radius: 50%;
+	margin-top:-70px;
+    }
+    h3,h4{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+	p{
+	font-size:15px;
+	line-height:20px;
+	color:#222222;
+	}
+    h3{
+    font-size: 16px;
+    }
+    h4{
+    font-size: 12px;
+    margin-top: 10px;
+    color:#0096FF;
+    }
+	.review i{
+	color:orange;
+	}
+
+	.custom-line {
+  border: none; /* Elimina la línea predeterminada */
+  border-bottom: 5px solid #1A66CC; /* Color y grosor de la línea */
+  width: 100%; /* Ancho ajustable */
+  margin: 70px 0; /* Espaciado arriba y abajo de la línea */
+}
+
+@media (max-width: 768px) {
+  .custom-line {
+    width: 802%; /* Cambia el ancho en pantallas más pequeñas */
+  }
+}
+.titulo {
+  color: #1A66CC; /* Cambia el color del texto */
+  text-align: center; /* Centra el título */
+}
+
+
+   </style>
+</html>

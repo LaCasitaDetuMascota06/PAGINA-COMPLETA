@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/6adaba3b1c.js" crossorigin="anonymous"></script>
+        <!-- My CSS -->
+        <link rel="stylesheet" href="/PAGINA/domiciliario/css/Ejemplo.css">
+    
+        <title>Domiciliario</title>
+    </head>
+<body>
+
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Domiciliario</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="/PAGINA/domiciliario/inicio.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Inicio</span>
+				</a>
+			</li>
+			<li >
+				<a href="/PAGINA/domiciliario/Ventas.html">
+					<i class="fa-solid fa-dollar-sign" style="margin-left: 14px; margin-right: 16px;"></i>
+					<span class="text">Ver Ventas</span>
+				</a>
+			</li>
+            <li>
+				<a href="/PAGINA/domiciliario/crud.html">
+                    <i class='bx bxs-box' ></i>
+					<span class="text">Pedidos</span>
+				</a>
+			</li>
+			<li>
+				<a href="/PAGINA/domiciliario/Ordenes.html">
+					<i class="fa-solid fa-truck" style="margin-left: 14px; margin-right: 14px;"></i>
+					<span class="text">Ver Ordenes</span>
+				</a>
+			</li>
+            <li class="active">
+				<a href="/PAGINA/domiciliario/Ejemplo.html">
+					<i class="fa-solid fa-ranking-star" style="margin-left: 14px; margin-right: 14px;"></i>
+					<span class="text">Puestos</span>
+				</a>
+			</li>
+			<li>
+				<a href="/PAGINA/domiciliario/Comentarios.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Comentarios</span>
+				</a>
+			</li>
+			<li >
+				<a href="/PAGINA/domiciliario/Ajustes.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Ajustes</span>
+				</a>
+			</li>
+			<li>
+						<a href="/logout">
+							<i class='bx bxs-log-out-circle'></i>
+							<span class="text">Cerrar sesion</span>
+						</a>
+					</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categorias</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a class="nav-link"href="/envio-correo">
+										<i class='bx bxs-envelope'></i>
+									</a>
+			<a href="#" class="profile">
+				<img src="/PAGINA/domiciliario/img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		
+        <div class="container">
+            <h2>Puesto del domiciliario</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Número</th>
+                        <th>correo</th>
+                        <th>marca de moto</th>
+                        <th>placa</th>
+                        <th>pedidos entregados</th>
+                        <th>Porcentaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Carlos Martínez</td>
+                        <td>3124567890</td>
+                        <td>carlos.martinez@email.com</td>
+                        <td>Yamaha</td>
+                        <td>XYZ123</td>
+                        <td>15</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress green" style="width: 90%;">90%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ana Torres</td>
+                        <td>3109876543</td>
+                        <td>ana.torres@email.com</td>
+                        <td>Honda</td>
+                        <td>ABC456</td>
+                        <td>22</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress blue" style="width: 75%;">75%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Luis Fernández</td>
+                        <td>3152349876</td>
+                        <td>luis.fernandez@email.com</td>
+                        <td>Suzuki</td>
+                        <td>JKL789</td>
+                        <td>18</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress yellow" style="width: 65%;">65%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mariana Gómez</td>
+                        <td>3204561234</td>
+                        <td>mariana.gomez@email.com</td>
+                        <td>Kawasaki</td>
+                        <td>MNO321</td>
+                        <td>30</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress gray" style="width: 50%;">50%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+         <h2>puesto de producto mas vendido</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Nombre</th>
+                    <th>Porcentaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9384A12B</td>
+                    <td>Mariana Gómez</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress green" style="width: 85%;">85%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7C56F93D</td>
+                    <td>Luis Fernández</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress blue" style="width: 70%;">70%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>E192B8F0</td>
+                    <td>Ana Torres</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress yellow" style="width: 60%;">60%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5A7D6C2E</td>
+                    <td>Carlos Martínez</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress gray" style="width: 45%;">45%</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Puesto de categoría </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Número</th>
+                    <th>Producto</th>
+                    <th>Porcentaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sofía Ramírez</td>
+                    <td>3112345678</td>
+                    <td>Comida para perros</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress green" style="width: 80%;">80%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Andrés Gómez</td>
+                    <td>3187654321</td>
+                    <td>Juguete para gatos</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress blue" style="width: 60%;">60%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Valeria Muñoz</td>
+                    <td>3209876543</td>
+                    <td>Cama para mascotas</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress yellow" style="width: 50%;">50%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ricardo Sánchez</td>
+                    <td>3145678901</td>
+                    <td>Snack</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress gray" style="width: 40%;">40%</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>localidades</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>producto por día</th>
+                    <th>unidades vendidas</th>
+                    <th>producto mensual</th>
+                    <th>unidades vendidas</th>
+                    <th>localidades</th>
+                    <th>Porcentaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Comida para perros</td>
+                    <td>80</td>
+                    <td>Comida para perros</td>
+                    <td>253</td>
+                    <td>Chapinero</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress green" style="width: 70%;">70%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Juguetes para gatos</td>
+                    <td>25</td>
+                    <td>Juguetes para gatos</td>
+                    <td>123</td>
+                    <td>Suba</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress blue" style="width: 55%;">55%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Arenas para gatos</td>
+                    <td>35</td>
+                    <td>Arenas para gatos</td>
+                    <td>421</td>
+                    <td>Usaquén</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress yellow" style="width: 45%;">45%</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Shampoo para mascotas</td>
+                    <td>10</td>
+                    <td>Shampoo para mascotas</td>
+                    <td>243</td>
+                    <td>Engativá</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress gray" style="width: 35%;">35%</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+         </div>
+
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="/PAGINA/domiciliario/js/we.js"></script>
+</body>
+</html>

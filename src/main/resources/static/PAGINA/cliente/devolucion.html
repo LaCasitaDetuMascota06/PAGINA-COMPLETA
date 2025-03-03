@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devolución de Pedidos - La Casita de Tu Mascota</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #B94D00;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #B94D00;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #A63E00;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: white;
+      font-size: 14px;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      background-color: #d4edda;
+      color: #155724;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Casita de Tu Mascota</h1>
+    <h2>Formulario de Devolución de Pedidos</h2>
+  </header>
+
+  <main>
+    <form id="devolucionForm">
+      <label for="pedidoId">ID del Pedido:</label>
+      <input type="text" id="pedidoId" name="pedidoId" placeholder="Ingresa el ID del pedido" required>
+
+      <label for="motivo">Motivo de Devolución:</label>
+      <select id="motivo" name="motivo" required>
+        <option value="" disabled selected>Selecciona un motivo</option>
+        <option value="defectuoso">Producto defectuoso</option>
+        <option value="equivocado">Producto equivocado</option>
+        <option value="noSatisfecho">No satisfecho</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" placeholder="Describe el motivo de la devolución" required></textarea>
+
+      <label for="fecha">Fecha de Compra:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <button type="submit">Enviar Devolución</button>
+    </form>
+
+    <div id="resultado" class="hidden"></div>
+    <button onclick="location.href='inicio.html'" style="background-color: #B94D00; color: white; padding: 10px; border: none; border-radius: 4px; margin-top: 20px;">Volver al Inicio</button>
+  </main>
+
+  <footer>
+    <p>© 2024 La Casita de Tu Mascota - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    document.getElementById('devolucionForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const pedidoId = document.getElementById('pedidoId').value;
+      const motivo = document.getElementById('motivo').value;
+      const descripcion = document.getElementById('descripcion').value;
+      const fecha = document.getElementById('fecha').value;
+
+      if (pedidoId && motivo && descripcion && fecha) {
+        const resultado = document.getElementById('resultado');
+        resultado.classList.remove('hidden');
+        resultado.textContent = `La devolución para el pedido ID: ${pedidoId} ha sido enviada exitosamente. Nos pondremos en contacto contigo pronto.`;
+        document.getElementById('devolucionForm').reset();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <!-- Estilos de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .excel-btn {
+            background-color: #28a745;
+        }
+
+        .pdf-btn {
+            background-color: #dc3545;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            padding: 0.2em 1em;
+            margin: 0.2em;
+            border: 1px solid transparent;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+            background: #0056b3;
+        }
+    </style>
+    <!-- Scripts necesarios -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+        <div class="button-container">
+            <button onclick="window.location.href='/reportes/agregar'" class="excel-btn">Agregar Persona</button>
+            <button onclick="window.location.href='/reportes/excel'" class="excel-btn">Exportar Excel</button>
+            <button onclick="window.location.href='/reportes/pdf'" class="pdf-btn">Exportar PDF</button>
+        </div>
+        <table id="tablaUsuarios" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos se renderizan aquí con Thymeleaf -->
+                <tr th:each="persona : ${personas}">
+                    <td th:text="${persona.id}"></td>
+                    <td th:text="${persona.nombre}"></td>
+                    <td th:text="${persona.correo}"></td>
+                    <td th:text="${persona.telefono}"></td>
+                    <td>
+                        <button th:attr="onclick='editar(' + ${persona.id} + ')'"
+                            style="background-color: #ffc107;">Editar</button>
+                        <button th:attr="onclick='eliminar(' + ${persona.id} + ')'"
+                            style="background-color: #dc3545;">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#tablaUsuarios').DataTable({
+                dom: 'Bfrtip',
+                buttons: ['excel', 'pdf', 'print']
+            });
+        });
+
+        function editar(id) {
+            window.location.href = `/reportes/editar/${id}`;
+        }
+
+        function eliminar(id) {
+            if (confirm('¿Estás seguro de que deseas eliminar este usuario?')) {
+                fetch(`/reportes/eliminar/${id}`, { method: 'DELETE' })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Usuario eliminado con éxito');
+                            location.reload();
+                        } else {
+                            alert('Ocurrió un error al eliminar el usuario');
+                        }
+                    })
+                    .catch(err => console.error(err));
+            }
+        }
+
+    </script>
+</body>
+
+</html>

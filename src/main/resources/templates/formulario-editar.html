@@ -1,0 +1,10 @@
+<form action="/reportes/editar" method="post">
+    <input type="hidden" name="id" th:value="${persona.id}">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" th:value="${persona.nombre}" required><br>
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" th:value="${persona.correo}" required><br>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" th:value="${persona.telefono}" pattern="^[0-9]{10}$" required><br>
+    <button type="submit">Guardar</button>
+</form>

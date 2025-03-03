@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/PAGINA/cliente/css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/PAGINA/cliente/js/app.js" async></script>
+    <title>Catalogo | La casita de tu mascota </title>
+    <style>
+        .carrito-item-detalles {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        .carrito-item-titulo {
+            font-size: 14px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .selector-cantidad {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .carrito-item-precio {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .carrito-item img {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .carrito-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .carrito {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 100%;
+            background-color: #f8f9fa;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            margin-right: -300px;
+            opacity: 0;
+        }
+
+        .header-carrito {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .carrito-items {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .carrito-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .carrito-item img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        .carrito-total {
+            padding: 10px;
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+
+        .btn-pagar {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-pagar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">La Casita de tu Mascota</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/PAGINA/cliente/Inicio.html">Inicio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <!-- Contenedor de productos -->
+<div class="contenedor-items">
+    <div class="item">
+        <span class="titulo-item">Purina Alpo</span>
+        <img src="/PAGINA/cliente/img/1.jpg" alt="" class="img-item">
+        <span class="precio-item">$15.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Purina Ringo</span>
+        <img src="/PAGINA/cliente/img/2.jpg" alt="" class="img-item">
+        <span class="precio-item">$25.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Dogourmet adulto raza grande</span>
+        <img src="/PAGINA/cliente/img/3.jpg" alt="" class="img-item">
+        <span class="precio-item">$35.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">boucher pedigree</span>
+        <img src="/PAGINA/cliente/img/4.jpg" alt="" class="img-item">
+        <span class="precio-item">$18.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Purina Dog chow</span>
+        <img src="/PAGINA/cliente/img/5.jpg" alt="" class="img-item">
+        <span class="precio-item">$32.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Jabon para mascotas | asuntol</span>
+        <img src="/PAGINA/cliente/img/6.jpg" alt="" class="img-item">
+        <span class="precio-item">$18.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Purina para gatos | Mirringo</span>
+        <img src="/PAGINA/cliente/img/7.jpg" alt="" class="img-item">
+        <span class="precio-item">$54.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Boucher whiskas
+        </span>
+        <img src="/PAGINA/cliente/img/8.jpg" alt="" class="img-item">
+        <span class="precio-item">$32.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">purina Gati</span>
+        <img src="/PAGINA/cliente/img/9.jpg" alt="" class="img-item">
+        <span class="precio-item">$42.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Purina Catchow</span>
+        <img src="/PAGINA/cliente/img/10.jpg" alt="" class="img-item">
+        <span class="precio-item">$15.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Purina Felix</span>
+        <img src="/PAGINA/cliente/img/11.jpg" alt="" class="img-item">
+        <span class="precio-item">$25.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Mixtura para ave</span>
+        <img src="/PAGINA/cliente/img/12.jpg" alt="" class="img-item">
+        <span class="precio-item">$35.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Semilla de girasol</span>
+        <img src="/PAGINA/cliente/img/13.jpg" alt="" class="img-item">
+        <span class="precio-item">$18.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">correa para perros</span>
+        <img src="/PAGINA/cliente/img/14.jpg" alt="" class="img-item">
+        <span class="precio-item">$32.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Cama para mascota</span>
+        <img src="/PAGINA/cliente/img/15.jpg" alt="" class="img-item">
+        <span class="precio-item">$18.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Dulces para perros</span>
+        <img src="/PAGINA/cliente/img/16.jpg" alt="" class="img-item">
+        <span class="precio-item">$54.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+</div>
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

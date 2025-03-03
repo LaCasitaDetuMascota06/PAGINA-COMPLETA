@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="/PAGINA/domiciliario/css/Ordenes.css">
+	
+	<link rel="stylesheet" href="/PAGINA/domiciliario/css/cartas.css">
+	<script src="https://kit.fontawesome.com/6adaba3b1c.js" crossorigin="anonymous"></script>
+
+	<!-- custom js file link  -->
+	<script src="/domiciliario/js/cartas.js" defer></script>
+
+	<title>Domiciliario</title>
+</head>
+<body>
+
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Domiciliario</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="/PAGINA/domiciliario/inicio.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Inicio</span>
+				</a>
+			</li>
+			<li >
+				<a href="/PAGINA/domiciliario/Ventas.html">
+					<i class="fa-solid fa-dollar-sign" style="margin-left: 14px; margin-right: 16px;"></i>
+					<span class="text">Ver Ventas</span>
+				</a>
+			</li>
+			<li>
+				<a href="/PAGINA/domiciliario/crud.html">
+					<i class='bx bxs-box' ></i>
+					<span class="text">Pedidos</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="/PAGINA/domiciliario/Ordenes.html">
+					<i class="fa-solid fa-truck" style="margin-left: 14px; margin-right: 14px;"></i>
+					<span class="text">Ver Ordenes</span>
+				</a>
+			</li>
+			<li >
+				<a href="/PAGINA/domiciliario/Ejemplo.html">
+					<i class="fa-solid fa-ranking-star" style="margin-left: 14px; margin-right: 14px;"></i>
+					<span class="text">Puestos</span>
+				</a>
+			</li>
+			<li>
+				<a href="/PAGINA/domiciliario/Comentarios.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Comentarios</span>
+				</a>
+			</li>
+			<li >
+				<a href="/PAGINA/domiciliario/Ajustes.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Ajustes</span>
+				</a>
+			</li>
+			<li>
+						<a href="/logout">
+							<i class='bx bxs-log-out-circle'></i>
+							<span class="text">Cerrar sesion</span>
+						</a>
+					</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categorias</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a class="nav-link"href="/envio-correo">
+										<i class='bx bxs-envelope'></i>
+									</a>
+			<a href="#" class="profile">
+				<img src="/PAGINA/domiciliario/img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<div class="container">
+
+			<h3 class="title">Productos De Los Clientes</h3>
+		 
+			<div class="products-container">
+		 
+			   <div class="product" data-name="p-1">
+				  <img src="/PAGINA/domiciliario/img/1.png" alt="">
+				  <h3>Jefferson David <br> Hernandez Hernandez</h3>
+				  <div class="price">Jueguete De Comida</div>
+			   </div>
+		 
+			   <div class="product" data-name="p-2">
+				  <img src="/PAGINA/domiciliario/img/2.png" alt="">
+				  <h3>Nicol González López</h3>
+				  <div class="price">Comida De Gato</div>
+			   </div>
+		 
+			   <div class="product" data-name="p-3">
+				  <img src=/PAGINA/domiciliario/img/3.png" alt="">
+				  <h3>Mateo Galindo Sandino</h3>
+				  <div class="price">Gafas Para Perro</div>
+			   </div>
+		 
+			   <div class="product" data-name="p-4">
+				  <img src="/PAGINA/domiciliario/img/4.png" alt="">
+				  <h3>Jenifer Martinez Martinez</h3>
+				  <div class="price">Dulces Chunky</div>
+			   </div>
+		 
+			   <div class="product" data-name="p-5">
+				  <img src="/PAGINA/domiciliario/img/5.png" alt="">
+				  <h3>Juan Carlos <br> Rodríguez García</h3>
+				  <div class="price">Comida De Gato</div>
+			   </div>
+		 
+			   <div class="product" data-name="p-6">
+				  <img src="/PAGINA/domiciliario/img/6.png" alt="">
+				  <h3>Andrés Sebastián <br> Martínez López</h3>
+				  <div class="price">Dulces De Perro</div>
+			   </div>
+		 
+			</div>
+		 
+		 </div>
+		 
+		 <div class="products-preview">
+		 
+			<div class="preview" data-target="p-1">
+			   <i class="fas fa-times"></i>
+			   <img src="/domiciliario/img/7.png" alt="">
+			   <h3>Jueguete De Comida</h3>
+			   <h3>$56.000 COP</h3>
+			   <p><strong>Nombre:</strong>Jefferson David <br> Hernandez Hernandez</p>
+			   <p><strong>Numero:</strong>3125323456</p>
+			   <p><strong>Correo:</strong>Jeff@gmail.com</p>
+			   <p><strong>Direccion:</strong>Cra 9a #3722 sur</p>
+			   <p><strong>Fecha De Pago:</strong>06/02/2024</p>
+			   <p><strong>Tipo De Pago:</strong>Efectivo</p>
+			   <div class="buttons">
+				  <a href="#" class="buy">Aceptar</a>
+				  <a href="#" class="cart">Dejar En Reserva</a>
+			   </div>
+			</div>
+		 
+			<div class="preview" data-target="p-2">
+				<i class="fas fa-times"></i>
+				<img src="/PAGINA/domiciliario/img/8.png" alt="">
+				<h3>Comida De Gato</h3>
+			   <h3>$34.500 COP</h3>
+			   <p><strong>Nombre:</strong>Nicol González López</p>
+			   <p><strong>Numero:</strong>3278923456</p>
+			   <p><strong>Correo:</strong>Nico2323@gmail.com</p>
+			   <p><strong>Direccion:</strong>Cra 4a #5622 sur</p>
+			   <p><strong>Fecha De Pago:</strong>09/02/2024</p>
+			   <p><strong>Tipo De Pago:</strong>Efectivo</p>
+			   <div class="buttons">
+				  <a href="#" class="buy">Aceptar</a>
+				  <a href="#" class="cart">Dejar En Reserva</a>
+			   </div>
+			</div>
+		 
+			 <div class="preview" data-target="p-3">
+				<i class="fas fa-times"></i>
+				<img src="/PAGINA/domiciliario/img/9.png" alt="">
+				<h3>Gafas Para Perro</h3>
+			   <h3>$16.000 COP</h3>
+			   <p><strong>Nombre:</strong>Mateo Galindo Sandino</p>
+			   <p><strong>Numero:</strong>3125323456</p>
+			   <p><strong>Correo:</strong>G4y214@gmail.com</p>
+			   <p><strong>Direccion:</strong>Cra 8a #6982 norte</p>
+			   <p><strong>Fecha De Pago:</strong>08/22/2024</p>
+			   <p><strong>Tipo De Pago:</strong>Efectivo</p>
+			   <div class="buttons">
+				  <a href="#" class="buy">Aceptar</a>
+				  <a href="#" class="cart">Dejar En Reserva</a>
+			   </div>
+			</div>
+		 
+			 <div class="preview" data-target="p-4">
+				<i class="fas fa-times"></i>
+				<img src="/PAGINA/domiciliario/img/10.png" alt="">
+				<h3>Dulces Chunky</h3>
+			   <h3>$10.000 COP</h3>
+			   <p><strong>Nombre:</strong>Jenifer Martinez Martinez</p>
+			   <p><strong>Numero:</strong>3025323456</p>
+			   <p><strong>Correo:</strong>JenyRoblox2323@gmail.com</p>
+			   <p><strong>Direccion:</strong>Cra 9b #3552 sur</p>
+			   <p><strong>Fecha De Pago:</strong>06/19/2024</p>
+			   <p><strong>Tipo De Pago:</strong>Efectivo</p>
+			   <div class="buttons">
+				  <a href="#" class="buy">Aceptar</a>
+				  <a href="#" class="cart">Dejar En Reserva</a>
+			   </div>
+			</div>
+		 
+			<div class="preview" data-target="p-5">
+				<i class="fas fa-times"></i>
+				<img src="/PAGINA/domiciliario/img/11.png" alt="">
+				<h3>Comida De Gato</h3>
+			   <h3>$56.000 COP</h3>
+			   <p><strong>Nombre:</strong>Juan Carlos <br>
+				Rodríguez García</p>
+			   <p><strong>Numero:</strong>3125323456</p>
+			   <p><strong>Correo:</strong>Juanqui232@gmail.com</p>
+			   <p><strong>Direccion:</strong>Cra 9a #3722 sur</p>
+			   <p><strong>Fecha De Pago:</strong>06/02/2024</p>
+			   <p><strong>Tipo De Pago:</strong>Tarjeta Debito</p>
+			   <div class="buttons">
+				  <a href="#" class="buy">Aceptar</a>
+				  <a href="#" class="cart">Dejar En Reserva</a>
+			   </div>
+			</div>
+		 
+			<div class="preview" data-target="p-6">
+				<i class="fas fa-times"></i>
+				<img src="/PAGINA/domiciliario/img/12.png" alt="">
+				<h3>Dulce De Perro</h3>
+			   <h3>$26.000 COP</h3>
+			   <p><strong>Nombre:</strong>Andrés Sebastián<br>
+				Martínez López</p>
+			   <p><strong>Numero:</strong>3027323456</p>
+			   <p><strong>Correo:</strong>Andrsito@gmail.com</p>
+			   <p><strong>Direccion:</strong>Cra 95a #9022 sur</p>
+			   <p><strong>Fecha De Pago:</strong>11/22/2024</p>
+			   <p><strong>Tipo De Pago:</strong>Tarjeta Credito</p>
+			   <div class="buttons">
+				  <a href="#" class="buy">Aceptar</a>
+				  <a href="#" class="cart">Dejar En Reserva</a>
+			   </div>
+			</div>
+		 
+		 </div>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="/PAGINA/domiciliario/js/we.js"></script>
+</body>
+</html>

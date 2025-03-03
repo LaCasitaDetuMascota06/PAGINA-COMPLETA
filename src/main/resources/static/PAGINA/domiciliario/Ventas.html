@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="/PAGINA/domiciliario/css/Ventas.css">
+	<link rel="stylesheet" href="/PAGINA/domiciliario/css/style.css">
+	<script src="https://kit.fontawesome.com/6adaba3b1c.js" crossorigin="anonymous"></script>
+
+	<title>Domiciliario</title>
+</head>
+<body>
+
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Domiciliario</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="/PAGINA/domiciliario/inicio.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Inicio</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="/PAGINA/domiciliario/Ventas.html">
+					<i class="fa-solid fa-dollar-sign" style="margin-left: 14px; margin-right: 16px;"></i>
+					<span class="text">Ver Ventas</span>
+				</a>
+			</li>
+			<li>
+				<a href="/PAGINA/domiciliario/crud.html">
+					<i class='bx bxs-box' ></i>
+					<span class="text">Pedidos</span>
+				</a>
+			</li>
+			<li>
+				<a href="/PAGINA/domiciliario/Ordenes.html">
+					<i class="fa-solid fa-truck" style="margin-left: 14px; margin-right: 14px;"></i>
+					<span class="text">Ver Ordenes</span>
+				</a>
+			</li>
+			<li >
+				<a href="/PAGINA/domiciliario/Ejemplo.html">
+					<i class="fa-solid fa-ranking-star" style="margin-left: 14px; margin-right: 14px;"></i>
+					<span class="text">Puestos</span>
+				</a>
+			</li>
+			<li>
+				<a href="/PAGINA/domiciliario/Comentarios.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Comentarios</span>
+				</a>
+			</li>
+			<li >
+				<a href="/PAGINA/domiciliario/Ajustes.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Ajustes</span>
+				</a>
+			</li>
+			<li>
+						<a href="/logout">
+							<i class='bx bxs-log-out-circle'></i>
+							<span class="text">Cerrar sesion</span>
+						</a>
+					</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categorias</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a class="nav-link"href="/envio-correo">
+										<i class='bx bxs-envelope'></i>
+									</a>
+			<a href="#" class="profile">
+				<img src="/PAGINA/domiciliario/img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<div class="container">
+			<!-- Sidebar Section -->
+		
+			<aside>
+				<div class="toggle">
+					<div class="close" id="close-btn">
+						<span class="material-icons-sharp">
+							
+						</span>
+					</div>
+				</div>
+			</aside>
+			<!-- End of Sidebar Section -->
+	
+			<!-- Main Content -->
+			<main>
+				<br><br>
+				<!-- Analyses -->
+				<div class="analyse">
+					<div class="sales">
+						<div class="status">
+							<div class="info">
+								<h3>Total Sales</h3>
+								<h1>$55,024</h1>
+							</div>
+							<div class="progresss">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="percentage">
+									<p>+81%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="visits">
+						<div class="status">
+							<div class="info">
+								<h3>Site Visit</h3>
+								<h1>24,981</h1>
+							</div>
+							<div class="progresss">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="percentage">
+									<p>-48%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="searches">
+						<div class="status">
+							<div class="info">
+								<h3>Searches</h3>
+								<h1>14,147</h1>
+							</div>
+							<div class="progresss">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="percentage">
+									<p>+21%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Analyses -->
+	
+				<!-- New Users Section -->
+				<div class="new-users">
+					<h2>Logros</h2>
+					<div class="user-list">
+						<div class="user">
+							<img src="/PAGINA/domiciliario/img/profile-2.png">
+							<h2>Puntualidad</h2>
+							<p>llegaste antes de lo esperado</p>
+						</div>
+						<div class="user">
+							<img src="/PAGINA/domiciliario/img/profile-3.png">
+							<h2>Buenas Ventas</h2>
+							<p>Exelente rendimiento</p>
+						</div>
+						<div class="user">
+							<img src="/PAGINA/domiciliario/img/profile-4.png">
+							<h2>Liderazgo</h2>
+							<p>Buen trabajo en equipo</p>
+						</div>
+						<div class="user">
+							<img src="/PAGINA/domiciliario/img/profile-5.png">
+							<h2>Atencion Al Cliente</h2>
+							<p>Eres muy carismatico</p>
+						</div>
+					</div>
+				</div>
+				<!-- End of New Users Section -->
+	
+				<!-- Recent Orders Table -->
+				<div class="recent-orders">
+					<h2>Usuarios nuevos</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Identificación</th>
+								<th>Correo</th>
+								<th>Fecha de Registro</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<a href="#">Show All</a>
+				</div>
+				<!-- End of Recent Orders -->
+	
+			</main>
+			<!-- End of Main Content -->
+	
+			<!-- Right Section -->
+			
+			<div class="right-section"><br><br>
+				<div class="nav">
+					<button id="menu-btn">
+						
+					</button>
+					<div class="dark-mode">
+						
+					</div>
+	
+					
+	
+				</div>
+				<!-- End of Nav -->
+	
+				<div class="user-profile">
+					<div class="logo">
+						<img src="/PAGINA/domiciliario/img/logo.png">
+						<h2>AsmrProg</h2>
+						<p>Fullstack Web Developer</p>
+					</div>
+				</div>
+	
+				<div class="reminders">
+					<div class="header">
+						<h2>Reminders</h2>
+						<span class="material-icons-sharp">
+							notifications_none
+						</span>
+					</div>
+	
+					<div class="notification">
+						<div class="icon">
+							<span class="material-icons-sharp">
+								volume_up
+							</span>
+						</div>
+						<div class="content">
+							<div class="info">
+								<h3>Workshop</h3>
+								<small class="text_muted">
+									08:00 AM - 12:00 PM
+								</small>
+							</div>
+							<span class="material-icons-sharp">
+								more_vert
+							</span>
+						</div>
+					</div>
+	
+					<div class="notification deactive">
+						<div class="icon">
+							<span class="material-icons-sharp">
+								edit
+							</span>
+						</div>
+						<div class="content">
+							<div class="info">
+								<h3>Workshop</h3>
+								<small class="text_muted">
+									08:00 AM - 12:00 PM
+								</small>
+							</div>
+							<span class="material-icons-sharp">
+								more_vert
+							</span>
+						</div>
+					</div>
+	
+					<div class="notification add-reminder">
+						<div>
+							<span class="material-icons-sharp">
+								add
+							</span>
+							<h3>Add Reminder</h3>
+						</div>
+					</div>
+	
+				</div>
+	
+			</div>
+	
+	
+		</div>
+	
+		
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="/PAGINA/domiciliario/js/we.js"></script>
+	<script src="/PAGINA/domiciliario/js/orders.js"></script>
+	<script src="/PAGINA/domiciliario/js/index.js"></script>
+</body>
+</html>
